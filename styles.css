@@ -106,6 +106,8 @@ th{
     .container {
         width: 95%;
         padding: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
     
     
