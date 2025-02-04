@@ -1,0 +1,136 @@
+body {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;
+    height: 100vh;
+    margin:0px;
+    background-color: #f4f4f9; /* Optional: Background color */
+}
+
+.container{
+    border: 2px solid black;
+    padding: 10px; 
+    box-shadow: 1px 3px 8px 5px rgba(0,0,0,0.5);
+}
+
+.balance-overview{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+}
+.inc{
+    color: green;
+    font-weight: bold;
+    font-size: 20px;
+}
+.exp{
+    color:red;
+    font-weight: bold;
+    font-size: 20px;
+}
+.bal{
+    color:blue;
+    font-weight: bold;
+    font-size: 20px;
+}
+h1{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   /* text-decoration: underline;*/
+}
+
+form{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    
+
+}
+
+button{
+    padding:10px 15px;
+    background-color:#007bff;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 3px;
+
+}
+button:hover{
+background-color: lightblue;
+}
+
+.filters{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    gap: 2px;
+}
+
+.filters label{
+font-size: 20px;
+}
+.filters input[value="all"] + label {
+    color: blue;
+}
+.filters input[value="expense"] + label{
+    color: red;
+}
+.filters input[value="income"] + label{
+    color:green;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid black; 
+}
+th,td{
+    border: 2px solid black; 
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+
+}
+
+th{
+    font-weight: bold;
+}
+
+/*mobile*/
+
+@media (max-width: 768px) {
+    
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+    
+    
+    th, td {
+        font-size: 14px; 
+    }
+    
+    button {
+        padding: 8px 12px; 
+    }
+    
+   
+    .balance-overview p {
+        font-size: 14px;
+    }
+    
+ 
+    form {
+        flex-direction: column;
+        gap: 12px;
+    }
+}
+
+
+
+
+
+

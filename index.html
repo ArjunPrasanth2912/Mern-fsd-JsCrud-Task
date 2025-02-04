@@ -5,18 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Income Expense Calculator</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <h1>Income Expense Calculator</h1>
         
         <div class="balance-overview">
-            <p>Total Income: <span id="total-income">₹0</span></p>
-            <p>Total Expenses: <span id="total-expenses">₹0</span></p>
-            <p>Net Balance: <span id="net-balance">₹0</span></p>
+            <p class="inc">Total Income: <span id="total-income">₹0</span></p>
+            <p class="exp">Total Expense: <span id="total-expenses">₹0</span></p>
+            <p class="bal">Net Balance: <span id="net-balance">₹0</span></p>
         </div>
 
-        <form id="myForm">
+        <form id="myForm" class="form-field">
             <input type="text" id="description" placeholder="Description" required>
             <input type="number" id="amount" placeholder="Amount" required>
             <select id="type">
